@@ -33,47 +33,49 @@ table{border-collapse:collapse;width:100%;font-size:.95rem}td,th{text-align:left
 <header>
   <div class="eyebrow">Team Nexance · Unnati Tiwari · The Ultimate Pitch XII · Different by Design</div>
   <h1>FirstSign</h1>
-  <p class="tag">Instant sick pay for India's 40 crore informal workers, and the earliest warning of every disease outbreak.</p>
+  <p class="tag">India's early-warning network for disease outbreaks, built at the chemist's counter.</p>
 </header>
 
-<h2>The problem, plainly</h2>
-<p>When a disease spreads through a neighbourhood, dengue, malaria or typhoid in the monsoon, heatstroke in summer, a daily-wage worker who falls sick loses a week's income and no one pays him: every fever policy in India pays only after a hospital admission, and most fever is treated at home. Meanwhile the health system learns about the spread from hospital reports, about ten days late.</p>
+<h2>The problem</h2>
+<p>Every monsoon, dengue, malaria and typhoid spread through our neighbourhoods. The first sign appears around day two, when people start buying fever tablets, ORS and test kits at the local chemist. The health department finds out around day ten, from hospital reports. By then the disease has spread, hospitals are overwhelmed and pharmacies have run out of test kits. <em>Outbreak: a disease spreading through a neighbourhood faster than usual.</em></p>
 <div class="grid">
-  <div class="card"><b>40 crore+</b><span>Indians in informal work, with no sick leave</span></div>
-  <div class="card red"><b>39.4%</b><span>of health spending paid out of pocket (NHA 2021-22); ~5.5 crore pushed into poverty a year (estimate)</span></div>
-  <div class="card mari"><b>247 bn</b><span>work hours lost to heat in 2024 (Lancet Countdown 2025)</span></div>
-  <div class="card red"><b>297 vs 2,340</b><span>dengue deaths recorded vs on death certificates, 2024</span></div>
+  <div class="card red"><b>297 vs 2,340</b><span>dengue deaths in 2024: recorded by the health ministry vs on death certificates</span></div>
+  <div class="card"><b>2.33 lakh</b><span>dengue cases reported in 2024</span></div>
+  <div class="card red"><b>39.4%</b><span>of health spending paid out of pocket (NHA 2021-22)</span></div>
+  <div class="card mari"><b>2 to 14 days</b><span>lead of pharmacy-sales signals over lab reports in published studies</span></div>
 </div>
 
 <h2>How it works</h2>
 <ol>
-  <li><b>₹19 a month</b> (₹199/yr) covers a worker, usually paid by a gig platform, a welfare board or an employer.</li>
-  <li>He tests positive on a <b>rapid test</b> for dengue, malaria or typhoid, at a chemist or with an ASHA.</li>
-  <li>He photographs it in the app; AI checks the test, the pharmacy bill or ASHA record, and the pin code.</li>
-  <li><b>₹3,000 lands on UPI the same day</b>, roughly six lost days' wages.</li>
-  <li>Each payout is a <b>verified case on a live map</b>. The pin-code Outbreak Index shows officials a cluster forming days before hospitals report it, and test kits go to every covered worker in a red pin code.</li>
+  <li><b>Chemist's counter (the sensor):</b> fever tablets, ORS and test kits sold today.</li>
+  <li><b>Billing software they already use (the wire):</b> anonymised daily counts of a few products by pin code. No patient data. One billing app alone serves 1.75 lakh chemists.</li>
+  <li><b>FirstSign AI (the brain):</b> adds lab positivity and weather, learns each pin code's normal, and scores an <b>Outbreak Index</b> 1 to 2 weeks before official reports.</li>
+  <li><b>Forecasts go out:</b> to health officers, hospitals and labs, pharma and distributors. Today's pharma sales data is monthly; ours is daily.</li>
+  <li><b>The chemist gets something back:</b> a free forecast of what to stock next week, plus a revenue share.</li>
 </ol>
 
-<h2>Who pays, who runs it, what government does</h2>
+<h2>Who pays, and who benefits</h2>
 <table>
-<tr><th>Who</th><th>Role</th><th>Why / how paid</th></tr>
-<tr><td>Gig platforms</td><td>Buy cover for riders</td><td>Code on Social Security (in force 21 Nov 2025): 1–2% of turnover owed for worker welfare. No sickness scheme exists yet to spend it on.</td></tr>
-<tr><td>State welfare boards</td><td>Buy cover for registered workers</td><td>≈ ₹48,000 crore of construction-worker cess unspent</td></tr>
-<tr><td>Employers, MFIs, workers</td><td>Buy cover</td><td>Staff benefit, loan protection, or ₹19/month by UPI</td></tr>
-<tr><td>Licensed insurer</td><td>Carries the risk, pays on UPI</td><td>Premium minus claims and costs</td></tr>
-<tr><td><b>FirstSign</b></td><td>Outbreak Index, test verification, payout rails, enrolment APIs</td><td>≈ ₹34 per worker per year + outbreak-data subscriptions</td></tr>
-<tr><td>Chemists (cities)</td><td>Sell and verify the test; hold kits</td><td>Fee per verified test + kit margin</td></tr>
-<tr><td>ASHAs (villages)</td><td>Already test fever with malaria rapid tests for ₹15/test from the state; that test becomes the proof</td><td>No new job, no payment from us</td></tr>
-<tr><td>Government</td><td>Regulates (IRDAI sandbox), can co-fund premiums as with crop insurance (PMFBY), links e-Shram enrolment</td><td>Gets the outbreak map free</td></tr>
+<tr><th>Who</th><th>Gets</th><th>Pays</th></tr>
+<tr><td>Chemists, diagnostic labs</td><td>stock forecasts, benchmarks, revenue share</td><td>nothing; they share anonymised data</td></tr>
+<tr><td>Pharma and consumer health</td><td>move stock and marketing to a pin code before the spike</td><td>₹25–50 lakh a year (estimate)</td></tr>
+<tr><td>Distributors</td><td>what to send where, this week</td><td>₹2,000 a month (estimate)</td></tr>
+<tr><td>Hospitals and labs</td><td>plan beds, staff and test kits</td><td>subscription</td></tr>
+<tr><td>Insurers</td><td>claims forecasts; <b>Product 2: sick pay for workers, triggered by a positive test</b>, built on our index</td><td>licence per covered life</td></tr>
+<tr><td>Government</td><td>public alert dashboard</td><td>free; optional paid integration with state systems</td></tr>
 </table>
+<p>Launches with no insurer and no government approval needed. Precedent: Kinsa sold ZIP-code fever data to Clorox in the US; we do it with chemists, who are already in every Indian neighbourhood.</p>
 
-<h2>Where every ₹199 goes</h2>
-<table><tr><th>Line</th><th>₹ per worker per year</th></tr>
-<tr><td>Claims (2% claim rate × ₹3,000)</td><td>60</td></tr><tr><td>Test-and-protect kits for red pin codes</td><td>50</td></tr>
-<tr><td>Insurer + reinsurance</td><td>55</td></tr><tr><td><b>FirstSign</b></td><td><b>34</b></td></tr></table>
-<p>Break-even at about 3 million workers (year 3); ₹34 crore of fees at 10 million, plus data revenue.</p>
+<h2>The business (our estimate, year 4)</h2>
+<table><tr><th>Line</th><th>₹ crore a year</th></tr>
+<tr><td>40 pharma / consumer-health subscriptions</td><td>15</td></tr>
+<tr><td>5,000 distributors</td><td>12</td></tr>
+<tr><td>Hospitals, labs, insurer licences</td><td>5</td></tr>
+<tr><td>Government integration (optional)</td><td>3</td></tr>
+<tr><td><b>Total</b></td><td><b>≈ 35</b></td></tr></table>
+<p>Costs: chemist revenue share ≈ ₹2 crore; data and team ≈ ₹12 crore. Break-even around year 3.</p>
 
-<div class="weak" style="margin-top:16px"><b>Our weakest assumptions</b>, which the pilot (50,000 workers, one monsoon) exists to measure: (1) the claim rate; (2) fraud on test photos (bill QR, geo and time checks, one claim per season, 15-day wait); (3) whether platforms spend their social-security money on this; (4) chemists' cooperation.</div>
+<div class="weak" style="margin-top:16px"><b>Our weakest assumptions</b>: (1) chemist sign-up, so the pilot starts with one city, 500 chemists through one billing-software partner, one monsoon; (2) signal accuracy, backtested against official reports and lab positivity; (3) willingness of pharma to pay for daily data; (4) privacy: aggregated product counts only, no patient data.</div>
 
 <h2>Prototype</h2>
 <div class="note">The state-side console (live alerts, escalation trail, auto-drafted reports, natural-language analyst, voice intake) is built and running on real district data. The hosted console link is being published here; the code is committed nightly through the evaluation window.</div>
