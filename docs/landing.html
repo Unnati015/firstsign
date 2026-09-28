@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FirstSign</title>
+<meta name="description" content="FirstSign, outbreak cover that pays on the first sign, not the last. Team Nexance, The Ultimate Pitch XII.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{--paper:#F7F3EB;--card:#fff;--ink:#14213D;--ink2:#4E5A70;--muted:#8C96A8;--teal:#0E7C7B;--teal2:#E3F1F0;--mari:#F4A261;--red:#D6343E;--line:#DED8CC}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;line-height:1.55;padding:0 16px 56px}
+.wrap{max-width:900px;margin:0 auto}
+header{padding:40px 0 20px;border-bottom:3px solid var(--teal)}
+.eyebrow{color:var(--teal);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.4rem,7vw,4rem);margin:8px 0 4px;letter-spacing:-.01em}
+.tag{font-size:1.25rem;color:var(--ink2);margin:0}
+h2{font-size:1.4rem;margin:36px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--card);border-radius:14px;padding:16px 18px;box-shadow:0 6px 18px rgba(20,33,61,.06)}
+.card b{display:block;font-size:1.6rem;color:var(--teal)}.card.red b{color:var(--red)}.card.mari b{color:var(--mari)}
+.card span{color:var(--ink2);font-size:.95rem}
+ol,ul{padding-left:22px}li{margin:6px 0}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;padding:12px 18px;border-radius:10px;font-weight:600;margin:6px 8px 6px 0}
+.btn.alt{background:var(--teal2);color:var(--teal)}
+.note{background:var(--teal2);border-left:4px solid var(--teal);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0}
+.weak{background:#FBEBD8;border-left:4px solid var(--mari);padding:12px 14px;border-radius:0 10px 10px 0}
+footer{margin-top:40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:14px}
+table{border-collapse:collapse;width:100%;font-size:.95rem}td,th{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:600;font-size:.8rem;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Team Nexance · Unnati Tiwari · The Ultimate Pitch XII · Different by Design</div>
+  <h1>FirstSign</h1>
+  <p class="tag">India's early-warning network for disease outbreaks, built at the chemist's counter.</p>
+</header>
+
+<h2>The problem</h2>
+<p>Every monsoon, dengue, malaria and typhoid spread through our neighbourhoods. The first sign appears around day two, when people start buying fever tablets, ORS and test kits at the local chemist. The health department finds out around day ten, from hospital reports. By then the disease has spread, hospitals are overwhelmed and pharmacies have run out of test kits. <em>Outbreak: a disease spreading through a neighbourhood faster than usual.</em></p>
+<div class="grid">
+  <div class="card red"><b>297 vs 2,340</b><span>dengue deaths in 2024: recorded by the health ministry vs on death certificates</span></div>
+  <div class="card"><b>2.33 lakh</b><span>dengue cases reported in 2024</span></div>
+  <div class="card red"><b>39.4%</b><span>of health spending paid out of pocket (NHA 2021-22)</span></div>
+  <div class="card mari"><b>2 to 14 days</b><span>lead of pharmacy-sales signals over lab reports in published studies</span></div>
+</div>
+
+<h2>How it works</h2>
+<ol>
+  <li><b>Chemist's counter (the sensor):</b> fever tablets, ORS and test kits sold today.</li>
+  <li><b>Billing software they already use (the wire):</b> anonymised daily counts of a few products by pin code. No patient data. One billing app alone serves 1.75 lakh chemists.</li>
+  <li><b>FirstSign AI (the brain):</b> adds lab positivity and weather, learns each pin code's normal, and scores an <b>Outbreak Index</b> 1 to 2 weeks before official reports.</li>
+  <li><b>Forecasts go out:</b> to health officers, hospitals and labs, pharma and distributors. Today's pharma sales data is monthly; ours is daily.</li>
+  <li><b>The chemist gets something back:</b> a free forecast of what to stock next week, plus a revenue share.</li>
+</ol>
+
+<h2>Not just dengue: the outbreaks nobody is looking for</h2>
+<p>We watch <b>symptoms, not diagnoses</b>: fever tablets, cough syrups, ORS, test kits. So FirstSign can flag an unusual cluster (for example, coughs and fevers up 4× in three pin codes) before anyone has a name for it. That is how COVID waves, swine flu (H1N1) flare-ups and rare regional viruses like Nipah first show up. It is also the most valuable intelligence in public health, and the hardest to get any other way.</p>
+<p><b>Health apps as a second stream:</b> teleconsult symptoms, online pharmacy orders and lab reports from apps like Practo and PharmEasy (intended integrations) add online India to the chemist counter.</p>
+
+<h2>Who pays, and who benefits</h2>
+<table>
+<tr><th>Who</th><th>Gets</th><th>Pays</th></tr>
+<tr><td>Chemists, labs, health apps</td><td>stock forecasts, benchmarks, revenue share</td><td>nothing; they share anonymised data</td></tr>
+<tr><td>Pharma and consumer health</td><td>move stock and marketing to a pin code before the spike</td><td>₹25–50 lakh a year (estimate)</td></tr>
+<tr><td>Distributors</td><td>what to send where, this week</td><td>₹2,000 a month (estimate)</td></tr>
+<tr><td>Hospitals and labs</td><td>plan beds, staff and test kits</td><td>subscription</td></tr>
+<tr><td>Insurers</td><td>claims forecasts; <b>Product 2: sick pay for workers, triggered by a positive test</b>, built on our index</td><td>licence per covered life</td></tr>
+<tr><td>Government</td><td>public alert dashboard</td><td>free; optional paid integration with state systems</td></tr>
+</table>
+<p>Launches with no insurer and no government approval needed. Precedent: Kinsa sold ZIP-code fever data to Clorox in the US; we do it with chemists, who are already in every Indian neighbourhood.</p>
+
+<h2>The business (our estimate, year 4)</h2>
+<table><tr><th>Line</th><th>₹ crore a year</th></tr>
+<tr><td>40 pharma / consumer-health subscriptions</td><td>15</td></tr>
+<tr><td>5,000 distributors</td><td>12</td></tr>
+<tr><td>Hospitals, labs, insurer licences</td><td>5</td></tr>
+<tr><td>Government integration (optional)</td><td>3</td></tr>
+<tr><td><b>Total</b></td><td><b>≈ 35</b></td></tr></table>
+<p>Costs: chemist revenue share ≈ ₹2 crore; data and team ≈ ₹12 crore. Break-even around year 3.</p>
+
+<div class="weak" style="margin-top:16px"><b>Our weakest assumptions</b>: (1) chemist sign-up, so the pilot starts with one city, 500 chemists through one billing-software partner, one monsoon; (2) signal accuracy, backtested against official reports and lab positivity; (3) willingness of pharma to pay for daily data; (4) privacy: aggregated product counts only, no patient data.</div>
+
+<h2>Prototype</h2>
+<div class="note">The state-side console (live alerts, escalation trail, auto-drafted reports, natural-language analyst, voice intake) is built and running on real district data. The hosted console link is being published here; the code is committed nightly through the evaluation window.</div>
+<a class="btn" id="console" href="#" hidden>Open the console</a>
+<a class="btn alt" href="https://reliancetup.in/">The Ultimate Pitch XII</a>
+
+<h2>Pilot</h2>
+<ul><li>One monsoon · three districts · 50,000 workers · IRDAI sandbox</li><li>One verified claim per season · 15-day waiting period</li><li>Success = the index leads the official weekly report by ≥ 7 days, and stockouts of ORS/tests fall in pilot districts</li></ul>
+
+<footer>Team Nexance · FirstSign · updated 27 Sep 2026. Sources on request: NCVBDC, Registrar General of India (MCCD 2024), SEWA/Arsht-Rock, IRDAI Sandbox Regulations 2025, NITI Aayog gig-economy report, peer-reviewed syndromic-surveillance studies.</footer>
+</div>
+<script>
+// Set CONSOLE_URL once the Streamlit app is deployed; the button appears automatically.
+var CONSOLE_URL = "";
+if (CONSOLE_URL) { var b = document.getElementById("console"); b.href = CONSOLE_URL; b.hidden = false; }
+</script>
+</body>
+</html>
